@@ -1,4 +1,6 @@
-﻿* {
+ @import url(http://allfont.net/allfont.css?fonts=cloister-black-bt);
+* 
+{
 	margin: 0;
 	padding: 0;
 }
@@ -10,7 +12,7 @@ html, body {
 
 body {
 	align-items: center;
-  background-color: #FFF;
+    background-color: red;
 	display: flex;
 	font-family: 'Raleway', sans-serif;
 	flex-direction: column;
@@ -31,9 +33,9 @@ div.container {
 }
 
 h1 {
-  color: #fff;
-  font-family: 'Playfair Display', serif;
-  font-size: 52px;
+  color: white;
+  font-family: 'Cloister Black BT', arial;
+  font-size: 100px;
   font-weight: 900;
   line-height: 46px;
   margin: 0 0 60px 0;
@@ -43,6 +45,7 @@ h1 {
 }
 
 a.btn {
+    
 	background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,5,153,0.65) 100%);
 	border-radius: 2px;
 	box-shadow: 3px 2px 4px rgba(34,62,66,.25);
@@ -50,6 +53,7 @@ a.btn {
   font-size: 18px;
   letter-spacing: 1px;
   padding: 16px 32px;
+  vertical-align: bottom;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: box-shadow 1s ease;
@@ -61,3 +65,46 @@ a.btn:hover {
 	-webkit-transition: box-shadow 1s ease;
 	transition: box-shadow 1s ease;
 }
+
+
+.abas {
+    position: relative;
+    top:-350px;
+    left:1px;
+    }
+    .aba {
+    display: inline;
+    }
+    .aba > a {
+    float: left;
+    padding: 0.5em 1em;
+    /* /*  background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,5,153,0.65) 100%);
+    */ 
+    background-color:rgba(0, 0, 0, 0.5);
+    border-width: 1px; 
+    border-style: solid;
+    border-color: #CCC #CCC #FFF;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px; 
+    
+    
+    }
+    .aba:not(:target) a {
+    border-bottom: 0 none;
+    }
+    .aba:target a, a:hover {
+    background: white;
+    }
+    .conteudo {
+    position: absolute;
+    left: 0;
+    top: calc(2em + 4px); altura do link + bordas
+    z-index: -2; 
+    
+    
+    border: 1px solid #CCC;
+    background-color: white;
+    }
+    .aba:target .conteudo {
+    z-index: -1;
+    }
